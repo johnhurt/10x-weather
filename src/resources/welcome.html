@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Seattle Weather Service</title>
+
+<body>
+
+    <h1>Welcome to the Seattle Weather Service</h1>
+    <p>
+        This site does not have any interactive functionality. You can query the
+        weather data from the command line with. Here are some example commands
+    </p>
+
+    <h3>See all weather data</h3>
+    <pre>
+        curl <a href="/query" target="_blank">localhost:3000/query</a>
+    </pre>
+
+    <h3>See a limited number of weather data</h3>
+    <pre>
+        curl <a href="/query?limit=7" target="_blank">localhost:3000/query?limit=7</a>
+    </pre>
+
+    <h3>See only sunny days</h3>
+    <pre>
+        curl <a href="/query?weather=sun" target="_blank">localhost:3000/query?weather=sun</a>
+    </pre>
+
+    <h3>See only a specific day</h3>
+    <pre>
+        curl <a href="/query?date=2012-11-30" target="_blank">localhost:3000/query?date=2012-11-30</a>
+    </pre>
+
+    <h3>See a limited number of days with rain</h3>
+    <pre>
+        curl <a href="/query?weather=rain&limit=10" target="_blank">localhost:3000/query?weather=rain&limit=10</a>
+    </pre>
+</body>
+
+</html>
